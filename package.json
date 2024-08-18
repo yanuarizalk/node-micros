@@ -1,0 +1,21 @@
+{
+  "name": "example-micro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:user": "nodemon --inspect services/user/src/server.js",
+    "start:material": "nodemon --inspect services/material/src/server.js",
+    "start:transaction": "nodemon --inspect services/transaction/src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yanuarizalk",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "app": "file:app/src",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "sequelize": "^6.37.3"
+  }
+}
